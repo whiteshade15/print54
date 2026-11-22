@@ -216,11 +216,11 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
 .wa-fab:hover{transform:scale(1.07)}
 .wa-fab svg{width:30px;height:30px}
 @media (min-width:761px){.wa-fab{width:52px;height:52px;right:24px;bottom:24px}}
-#intro{position:fixed;inset:0;z-index:100;background:#0f0f0f;display:flex;align-items:center;justify-content:center;cursor:pointer;animation:i-bg .4s ease 1.05s both,i-out .25s ease 1.68s both}
-#intro svg{width:min(72vw,520px);height:auto;overflow:visible;transform-origin:50% 50%;animation:i-zoom .45s cubic-bezier(.55,0,.9,.35) 1.48s both}
+#intro{position:fixed;inset:0;z-index:100;background:#0f0f0f;display:flex;align-items:center;justify-content:center;cursor:pointer;animation:i-bg .6s ease 1.6s both,i-out .4s ease 2.55s both}
+#intro svg{width:min(72vw,520px);height:auto;overflow:visible;transform-origin:50% 50%;animation:i-zoom .7s cubic-bezier(.55,0,.9,.35) 2.25s both}
 @keyframes i-zoom{0%{transform:scale(1);opacity:1}70%{opacity:1}100%{transform:scale(16);opacity:0}}
-#intro .lg{opacity:0;filter:drop-shadow(0 0 6px rgba(255,255,255,.75)) drop-shadow(0 0 22px rgba(30,167,220,.55));animation:i-fl .9s steps(1,end) .1s both,i-gl .4s ease 1.05s both}
-#intro .kf{fill:#fff;animation:i-kf .4s ease 1.05s both}
+#intro .lg{opacity:0;filter:drop-shadow(0 0 6px rgba(255,255,255,.75)) drop-shadow(0 0 22px rgba(30,167,220,.55));animation:i-fl 1.4s steps(1,end) .15s both,i-gl .6s ease 1.6s both}
+#intro .kf{fill:#fff;animation:i-kf .6s ease 1.6s both}
 #intro.skip{animation:i-out .25s ease both}
 @keyframes i-bg{to{background:#f5f3ee}}
 @keyframes i-out{to{opacity:0;visibility:hidden}}
@@ -266,7 +266,7 @@ document.body.appendChild(d);
 function end(){if(d.parentNode)d.parentNode.removeChild(d);["click","keydown","touchstart","wheel"].forEach(function(t){removeEventListener(t,skip)});}
 function skip(){d.classList.add("skip");setTimeout(end,260);}
 ["click","keydown","touchstart","wheel"].forEach(function(t){addEventListener(t,skip,{once:true,passive:true})});
-setTimeout(end,1980);
+setTimeout(end,3000);
 })();
 </script>
 <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
