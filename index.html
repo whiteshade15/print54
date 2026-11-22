@@ -135,6 +135,11 @@ section{padding:84px 0}
 .work figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));font-size:14px;line-height:1.3}
 .work figcaption b{display:block;font-size:16px}
 .work[hidden]{display:none}
+.more-wrap{display:flex;justify-content:center;margin-top:26px}
+.more-btn{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;border:2px solid var(--paper);color:var(--paper)}
+.more-btn:hover,.more-btn:focus-visible{background:var(--paper);color:var(--ink)}
+.more-btn b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--y);color:var(--ink);font-size:18px;line-height:1}
+.more-btn[hidden]{display:none}
 
 /* étapes */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:1.5px solid var(--ink)}
@@ -337,6 +342,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
       </div>
     </div>
     <div class="gallery" id="gallery"></div>
+    <div class="more-wrap"><button type="button" class="more-btn" id="more-btn" aria-controls="gallery" aria-expanded="false"></button></div>
   </div>
 </section>
 
@@ -585,14 +591,34 @@ function setLang(l){
   try{localStorage.setItem("p54-lang",l)}catch(e){}
 }
 
-const gal=document.getElementById("gallery");let filter="all";
+const gal=document.getElementById("gallery");let filter="all";let expanded=false;const SHOW=6;
+const moreBtn=document.getElementById("more-btn");
 function renderGallery(){
-  gal.innerHTML=WORKS.map(([f,name,cat,fr_,nl,en])=>`<figure class="work" tabindex="0" role="button" aria-label="${pick("Agrandir :","Vergroten:","Enlarge:")} ${name}" data-cat="${cat}" ${filter!=="all"&&!cat.split(" ").includes(filter)?"hidden":""}>
+  gal.innerHTML=WORKS.map(([f,name,cat,fr_,nl,en])=>`<figure class="work" tabindex="0" role="button" aria-label="${pick("Agrandir :","Vergroten:","Enlarge:")} ${name}" data-cat="${cat}">
     <img src="img/${f}.webp" alt="${name} — ${pick(fr_,nl,en)}" loading="lazy"><figcaption><b>${name==="Salon de coiffure"?pick(name,"Kapsalon","Hair salon"):name}</b>${pick(fr_,nl,en)}</figcaption></figure>`).join("");
+  applyView();
 }
+function applyView(){
+  let n=0,total=0;
+  gal.querySelectorAll(".work").forEach(w=>{
+    const match=filter==="all"||w.dataset.cat.split(" ").includes(filter);
+    if(match)total++;
+    w.hidden=!match||(!expanded&&n++>=SHOW);
+    if(match&&expanded)n++;
+  });
+  const rest=total-SHOW;
+  moreBtn.hidden=rest<=0;
+  moreBtn.setAttribute("aria-expanded",expanded);
+  moreBtn.innerHTML=expanded?`<b>−</b>${pick("Voir moins","Minder tonen","Show less")}`:`<b>+</b>${pick("Voir plus de réalisations","Meer realisaties","See more work")} (${rest})`;
+}
+moreBtn.addEventListener("click",()=>{
+  const wasExpanded=expanded;expanded=!expanded;applyView();
+  if(expanded){const v=[...gal.querySelectorAll(".work:not([hidden])")];if(v[SHOW])v[SHOW].focus();}
+  else document.getElementById("realisations").scrollIntoView({behavior:"smooth"});
+});
 document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
   filter=b.dataset.f;document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-  gal.querySelectorAll(".work").forEach(w=>w.hidden=filter!=="all"&&!w.dataset.cat.split(" ").includes(filter));
+  expanded=false;applyView();
 }));
 
 const lb=document.getElementById("lb");
