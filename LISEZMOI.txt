@@ -3,6 +3,10 @@ PRINT54 — SITE WEB (version indépendante, novembre 2026)
 
 Mise en ligne
 -------------
+Ce dossier est la version FINALE pour print54.be (liens canonical et image
+d'aperçu pointent vers https://www.print54.be/, pas de balise noindex).
+La copie de test sur GitHub Pages pointe vers whiteshade15.github.io.
+
 Copier TOUT le contenu de ce dossier (index.html + dossier img/) à la racine
 de l'hébergement print54.be chez One.com (Gestionnaire de fichiers ou FTP),
 en remplaçant la page "Ce site Web est en construction".
