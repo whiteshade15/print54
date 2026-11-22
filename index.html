@@ -13,6 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_BE">
 <meta property="og:locale:alternate" content="nl_BE">
+<meta property="og:locale:alternate" content="en_GB">
 <meta property="og:site_name" content="Print54 Sign & Print">
 <meta property="og:title" content="Print54 · Votre empreinte graphique">
 <meta property="og:description" content="Enseignes lumineuses, lettrage véhicule, vitrophanie et impression, à Anderlecht.">
@@ -217,9 +218,10 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
     <button class="menu-btn" aria-controls="nav" aria-expanded="false" data-i18n="menu">Menu</button>
-    <div class="lang" role="group" aria-label="Langue / Taal">
+    <div class="lang" role="group" aria-label="Langue / Taal / Language">
       <button type="button" data-lang="fr" aria-pressed="true">FR</button>
       <button type="button" data-lang="nl" aria-pressed="false">NL</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
     <a class="btn btn-ink header-cta" href="#contact" data-i18n="cta.quote">Demander un devis</a>
   </div>
@@ -239,7 +241,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
       <div class="hero-meta">
         <span data-i18n="hero.m1">Atelier à Bruxelles</span>
         <span data-i18n="hero.m2">Pose sur place</span>
-        <span data-i18n="hero.m3">FR · NL</span>
+        <span data-i18n="hero.m3">FR · NL · EN</span>
       </div>
     </div>
     <div class="collage">
@@ -393,26 +395,26 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
 const WHATSAPP = "32477091897"; // numéro WhatsApp au format international sans + ni espaces, ex. "32470123456". Vide = bouton masqué.
 
 const WORKS = [
-  ["le-zee","Le Zee","ens","Enseigne lumineuse & drapeau","Lichtreclame & uithangbord"],
-  ["am-thermo","AM Thermo Services","veh","Lettrage utilitaire","Belettering bestelwagen"],
-  ["israya-facade","Israya","ens vit","Lettres & vitrophanie","Letters & raambelettering"],
-  ["kandinsky","Kandinsky","ens","Lettres rétroéclairées","Verlichte letters"],
-  ["esperance-sante","Maison médicale Espérance Santé","ens","Enseigne lumineuse bilingue","Tweetalige lichtreclame"],
-  ["ddr","DDR Construction","veh","Lettrage utilitaire","Belettering bestelwagen"],
-  ["mister-pepe","Mister Pépé","ens vit","Enseigne & vitrine","Gevelreclame & etalage"],
-  ["fitroom","The Fitroom","ens vit","Lettres en relief & film dépoli","Reliëfletters & matglasfolie"],
-  ["le-30","Le 30","ens","Lettres rétroéclairées","Verlichte letters"],
-  ["enata","Enata","veh","Décor de camping-car","Belettering mobilhome"],
-  ["ecowayez","Ecowayez","ens vit","Lettres 3D & vitrophanie","3D-letters & raambelettering"],
-  ["gala","Gala","ens","Lettres en relief & LED","Reliëfletters & led"],
-  ["velo-goffeau","Vélo Goffeau","ens vit","Lettres & décor de vitrine","Letters & etalagedecor"],
-  ["hd-autos","H.D. Autos","veh","Lettrage voiture","Belettering wagen"],
-  ["chicken-ky","Chicken Ky","ens","Enseigne en relief","Gevelreclame in reliëf"],
-  ["multinvest","Multinvest","ens","Panneau & lettres en relief","Paneel & reliëfletters"],
-  ["orca-sanitaire","Orca Sanitaire","ens vit","Enseigne & vitrophanie","Gevelreclame & raambelettering"],
-  ["centre-medical","Centre médical Charles Woeste","ens","Enseigne en caisson","Lichtbak"],
-  ["israya-vitrine","Israya","vit","Lettrage de vitrine","Raambelettering"],
-  ["enseigne-ciseaux","Salon de coiffure","ens","Enseigne drapeau découpée","Uitgesneden uithangbord"],
+  ["le-zee","Le Zee","ens","Enseigne lumineuse & drapeau","Lichtreclame & uithangbord","Illuminated sign & projecting sign"],
+  ["am-thermo","AM Thermo Services","veh","Lettrage utilitaire","Belettering bestelwagen","Van lettering"],
+  ["israya-facade","Israya","ens vit","Lettres & vitrophanie","Letters & raambelettering","Letters & window graphics"],
+  ["kandinsky","Kandinsky","ens","Lettres rétroéclairées","Verlichte letters","Backlit letters"],
+  ["esperance-sante","Maison médicale Espérance Santé","ens","Enseigne lumineuse bilingue","Tweetalige lichtreclame","Bilingual illuminated sign"],
+  ["ddr","DDR Construction","veh","Lettrage utilitaire","Belettering bestelwagen","Van lettering"],
+  ["mister-pepe","Mister Pépé","ens vit","Enseigne & vitrine","Gevelreclame & etalage","Sign & shop window"],
+  ["fitroom","The Fitroom","ens vit","Lettres en relief & film dépoli","Reliëfletters & matglasfolie","Raised letters & frosted film"],
+  ["le-30","Le 30","ens","Lettres rétroéclairées","Verlichte letters","Backlit letters"],
+  ["enata","Enata","veh","Décor de camping-car","Belettering mobilhome","Motorhome graphics"],
+  ["ecowayez","Ecowayez","ens vit","Lettres 3D & vitrophanie","3D-letters & raambelettering","3D letters & window graphics"],
+  ["gala","Gala","ens","Lettres en relief & LED","Reliëfletters & led","Raised letters & LED"],
+  ["velo-goffeau","Vélo Goffeau","ens vit","Lettres & décor de vitrine","Letters & etalagedecor","Letters & window decoration"],
+  ["hd-autos","H.D. Autos","veh","Lettrage voiture","Belettering wagen","Car lettering"],
+  ["chicken-ky","Chicken Ky","ens","Enseigne en relief","Gevelreclame in reliëf","Raised sign"],
+  ["multinvest","Multinvest","ens","Panneau & lettres en relief","Paneel & reliëfletters","Panel & raised letters"],
+  ["orca-sanitaire","Orca Sanitaire","ens vit","Enseigne & vitrophanie","Gevelreclame & raambelettering","Sign & window graphics"],
+  ["centre-medical","Centre médical Charles Woeste","ens","Enseigne en caisson","Lichtbak","Light box sign"],
+  ["israya-vitrine","Israya","vit","Lettrage de vitrine","Raambelettering","Window lettering"],
+  ["enseigne-ciseaux","Salon de coiffure","ens","Enseigne drapeau découpée","Uitgesneden uithangbord","Cut-out projecting sign"],
 ];
 
 const I18N = {
@@ -422,7 +424,7 @@ const I18N = {
   "hero.kicker":"Sign & Print · Anderlecht",
   "hero.title":"Uw <em>grafische afdruk</em>, van gevel tot bestelwagen.",
   "hero.lead":"Lichtreclame, reliëfletters, voertuigbelettering, etalages en drukwerk in alle formaten. Wij ontwerpen, maken en plaatsen, vanuit ons atelier in de Wayezstraat.",
-  "hero.m1":"Atelier in Brussel","hero.m2":"Plaatsing ter plaatse","hero.m3":"FR · NL",
+  "hero.m1":"Atelier in Brussel","hero.m2":"Plaatsing ter plaatse","hero.m3":"FR · NL · EN",
   "svc.kicker":"Wat wij doen","svc.title":"Alles wat een zaak zichtbaar maakt op straat.",
   "svc.lead":"Eén aanspreekpunt, van ontwerp tot plaatsing: geen eindeloze onderaanneming, geen verrassingen in het resultaat.",
   "s1.t":"Lichtreclame","s1.p":"Verlichte doosletters, lichtbakken, ledstrips en uithangborden, zichtbaar bij dag en bij nacht.","s1.a":"Achterverlichting","s1.b":"Uithangbord",
@@ -448,6 +450,39 @@ const I18N = {
   "f.about":"Gevelreclame, belettering en drukwerk in Brussel.","f.where":"Atelier","f.follow":"Volg ons",
   "f.legal":"De getoonde merken en logo’s behoren toe aan hun respectieve eigenaars.",
   "lb.close":"Sluiten"
+ },
+ en:{
+  "skip":"Skip to content","nav.services":"Services","nav.work":"Our work","nav.method":"How we work","nav.contact":"Contact","menu":"Menu",
+  "cta.quote":"Get a quote",
+  "hero.kicker":"Sign & Print · Anderlecht",
+  "hero.title":"Your <em>graphic fingerprint</em>, from shopfront to van.",
+  "hero.lead":"Illuminated signs, raised letters, vehicle lettering, shop windows and printing in every size. We design, make and install, from our workshop on Rue Wayez.",
+  "hero.m1":"Workshop in Brussels","hero.m2":"On-site installation","hero.m3":"FR · NL · EN",
+  "svc.kicker":"What we do","svc.title":"Everything that makes a business visible on the street.",
+  "svc.lead":"One point of contact from mock-up to installation: no long chain of subcontractors, no surprises in the result.",
+  "s1.t":"Illuminated signs","s1.p":"Backlit channel letters, light boxes, LED strips and projecting signs, visible by day and by night.","s1.a":"Backlighting","s1.b":"Projecting",
+  "s2.t":"Raised letters","s2.p":"Cut-out letters and 3D logos for facades, receptions and showrooms.","s2.a":"Facade","s2.b":"Indoor","s2.c":"Custom",
+  "s3.t":"Vehicle lettering","s3.p":"Vans, cars and motorhomes: your vehicle becomes advertising on the move.","s3.a":"Vans","s3.b":"Fleets",
+  "s4.t":"Shop windows & window film","s4.p":"Vinyl lettering, decorative stickers, frosted and one-way vision film for your glass.","s4.a":"Frosted","s4.b":"One-way vision","s4.c":"Decoration",
+  "s5.t":"Large-format printing","s5.p":"Banners, panels, posters and display materials, printed in our workshop.","s5.a":"Banners","s5.b":"Panels","s5.c":"Posters",
+  "s6.t":"Small-format printing","s6.p":"Business cards, flyers, leaflets and stationery in your brand colours.","s6.a":"Cards","s6.b":"Stationery",
+  "work.kicker":"Our work","work.title":"Signs you may already have walked past.",
+  "f.all":"All","f.ens":"Signs","f.veh":"Vehicles","f.vit":"Windows",
+  "m.kicker":"How we work","m.title":"Four steps, one workshop.",
+  "m1.t":"Measuring up","m1.p":"We listen to your project and come to see the facade or vehicle if needed.",
+  "m2.t":"Mock-up & quote","m2.p":"You receive an in-situ visual and a clear price before anything is made.",
+  "m3.t":"Production","m3.p":"Cutting, printing and assembly in our Anderlecht workshop.",
+  "m4.t":"Installation","m4.p":"Fitted by our team, on your facade, shop window or vehicle.",
+  "c.kicker":"Contact & quote","c.title":"Let’s talk about your project.","c.lead":"Tell us what you need: we will come back to you with a proposal and a price.",
+  "c.metro":"Anderlecht · Brussels","c.hours.t":"Monday – Friday: 9:00 – 17:00","c.hours.s":"Closed on Saturday and Sunday",
+  "q.type":"Your project","q.t1":"Sign","q.t2":"Raised letters","q.t3":"Vehicle","q.t4":"Shop window","q.t5":"Printing",
+  "q.name":"Name","q.company":"Company","q.phone":"Phone","q.size":"Size or quantity (if known)","q.size.ph":"e.g. facade 4 m × 0.8 m, 2 vans…",
+  "q.msg":"Your message","q.msg.ph":"What you have in mind, the site address, your deadline…","q.send":"Send request",
+  "q.note":"The button opens your email app with the request already written. You can also attach photos of your facade or vehicle.",
+  "q.err":"Please fill in your name, phone and message.",
+  "f.about":"Signs, lettering and printing in Brussels.","f.where":"Workshop","f.follow":"Follow us",
+  "f.legal":"Brands and logos shown belong to their respective owners.",
+  "lb.close":"Close"
  }
 };
 const FR_ERR="Merci d’indiquer votre nom, votre téléphone et votre message.";
@@ -457,7 +492,8 @@ const fr={};
 document.querySelectorAll("[data-i18n]").forEach(e=>fr[e.dataset.i18n]=e.textContent);
 document.querySelectorAll("[data-i18n-html]").forEach(e=>fr[e.dataset.i18nHtml]=e.innerHTML);
 document.querySelectorAll("[data-i18n-ph]").forEach(e=>fr[e.dataset.i18nPh]=e.placeholder);
-const t=k=>lang==="fr"?fr[k]:(I18N.nl[k]??fr[k]);
+const t=k=>lang==="fr"?fr[k]:(I18N[lang][k]??fr[k]);
+const pick=(a,b,c)=>lang==="fr"?a:lang==="nl"?b:c;
 
 function setLang(l){
   lang=l;document.documentElement.lang=l;
@@ -471,8 +507,8 @@ function setLang(l){
 
 const gal=document.getElementById("gallery");let filter="all";
 function renderGallery(){
-  gal.innerHTML=WORKS.map(([f,name,cat,fr_,nl])=>`<figure class="work" data-cat="${cat}" ${filter!=="all"&&!cat.split(" ").includes(filter)?"hidden":""}>
-    <img src="img/${f}.webp" alt="${name} — ${lang==="fr"?fr_:nl}" loading="lazy"><figcaption><b>${name}</b>${lang==="fr"?fr_:nl}</figcaption></figure>`).join("");
+  gal.innerHTML=WORKS.map(([f,name,cat,fr_,nl,en])=>`<figure class="work" data-cat="${cat}" ${filter!=="all"&&!cat.split(" ").includes(filter)?"hidden":""}>
+    <img src="img/${f}.webp" alt="${name} — ${pick(fr_,nl,en)}" loading="lazy"><figcaption><b>${name==="Salon de coiffure"?pick(name,"Kapsalon","Hair salon"):name}</b>${pick(fr_,nl,en)}</figcaption></figure>`).join("");
 }
 document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
   filter=b.dataset.f;document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));
@@ -494,11 +530,12 @@ nav.addEventListener("click",e=>{if(e.target.tagName==="A"){nav.classList.remove
 document.getElementById("quote").addEventListener("submit",e=>{
   e.preventDefault();const f=e.target,d=new FormData(f);
   if(!d.get("name").trim()||!d.get("phone").trim()||!d.get("msg").trim()){
-    const n=document.getElementById("q-note");n.textContent=lang==="fr"?FR_ERR:I18N.nl["q.err"];n.style.color="var(--m)";return;}
+    const n=document.getElementById("q-note");n.textContent=lang==="fr"?FR_ERR:I18N[lang]["q.err"];n.style.color="var(--m)";return;}
   const types=d.getAll("type").join(", ")||"—";
-  const subject=(lang==="fr"?"Demande de devis – ":"Offerteaanvraag – ")+types;
-  const body=[`${lang==="fr"?"Projet":"Project"} : ${types}`,`${lang==="fr"?"Nom":"Naam"} : ${d.get("name")}`,`${lang==="fr"?"Entreprise":"Bedrijf"} : ${d.get("company")||"—"}`,
-    `${lang==="fr"?"Téléphone":"Telefoon"} : ${d.get("phone")}`,`E-mail : ${d.get("email")||"—"}`,`${lang==="fr"?"Dimensions":"Afmetingen"} : ${d.get("size")||"—"}`,"",d.get("msg"),"",`(${lang.toUpperCase()} · print54.be)`].join("\n");
+  const L=(a,b,c)=>pick(a,b,c);
+  const subject=L("Demande de devis – ","Offerteaanvraag – ","Quote request – ")+types;
+  const body=[`${L("Projet","Project","Project")} : ${types}`,`${L("Nom","Naam","Name")} : ${d.get("name")}`,`${L("Entreprise","Bedrijf","Company")} : ${d.get("company")||"—"}`,
+    `${L("Téléphone","Telefoon","Phone")} : ${d.get("phone")}`,`E-mail : ${d.get("email")||"—"}`,`${L("Dimensions","Afmetingen","Size")} : ${d.get("size")||"—"}`,"",d.get("msg"),"",`(${lang.toUpperCase()} · print54.be)`].join("\n");
   location.href=`mailto:info@print54.be?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
@@ -510,8 +547,8 @@ document.querySelectorAll(".reveal").forEach(el=>io?io.observe(el):el.classList.
 
 let start="fr";
 try{const q=new URLSearchParams(location.search).get("lang");const s=localStorage.getItem("p54-lang");
-  start=q||s||((navigator.language||"").toLowerCase().startsWith("nl")?"nl":"fr");}catch(e){}
-setLang(start==="nl"?"nl":"fr");
+  const nav_=(navigator.language||"").toLowerCase();start=q||s||(nav_.startsWith("nl")?"nl":nav_.startsWith("en")?"en":"fr");}catch(e){}
+setLang(["fr","nl","en"].includes(start)?start:"fr");
 </script>
 </body>
 </html>
