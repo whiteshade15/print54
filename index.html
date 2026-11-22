@@ -88,7 +88,7 @@ nav a:hover{border-color:var(--m)}
 .dots{display:inline-flex;gap:4px}.dots b{width:9px;height:9px;border-radius:50%}
 .dots b:nth-child(1){background:var(--c)}.dots b:nth-child(2){background:var(--m)}.dots b:nth-child(3){background:var(--y)}.dots b:nth-child(4){background:var(--k)}
 h1{font-size:clamp(40px,6vw,74px);line-height:1.02;letter-spacing:-.035em;margin:18px 0 22px;font-weight:800}
-h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--y) 62%,var(--y) 92%,transparent 92%)}
+h1 em,.sec-head h2 em{font-style:normal;background:linear-gradient(transparent 62%,var(--y) 62%,var(--y) 92%,transparent 92%)}
 .lead{font-size:19px;color:var(--ink-2);max-width:34em;margin:0 0 30px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .hero-meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--ink-2)}
@@ -105,6 +105,7 @@ h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--y) 62%,
 /* sections */
 section{padding:84px 0}
 .sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+.sec-head h2 em{background:linear-gradient(transparent 50%,var(--y) 50%,var(--y) 86%,transparent 86%)}
 .sec-head h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.03em;margin:8px 0 0;font-weight:800;max-width:16em}
 .sec-head p{margin:0;color:var(--ink-2);max-width:30em}
 .dark{background:var(--ink);color:var(--paper)}
@@ -261,7 +262,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
   <div class="wrap">
     <div class="sec-head reveal">
       <div><span class="kicker" data-i18n="svc.kicker">Ce que nous faisons</span>
-      <h2 data-i18n="svc.title">Tout ce qui rend une entreprise visible dans la rue.</h2></div>
+      <h2 data-i18n-html="svc.title">Tout ce qui rend une entreprise <em>visible</em> dans la rue.</h2></div>
       <p data-i18n="svc.lead">Un seul interlocuteur, de la maquette à la pose : pas de sous-traitance à rallonge, pas de surprise sur le rendu.</p>
     </div>
     <div class="services">
@@ -430,7 +431,7 @@ const I18N = {
   "hero.title":"Uw <em>grafische afdruk</em>, van gevel tot bestelwagen.",
   "hero.lead":"Lichtreclame, reliëfletters, voertuigbelettering, etalages en drukwerk in alle formaten. Wij ontwerpen, maken en plaatsen, vanuit ons atelier in de Wayezstraat.",
   "hero.m1":"Atelier in Brussel","hero.m2":"Plaatsing ter plaatse","hero.m3":"FR · NL · EN",
-  "svc.kicker":"Wat wij doen","svc.title":"Alles wat een zaak zichtbaar maakt op straat.",
+  "svc.kicker":"Wat wij doen","svc.title":"Alles wat een zaak <em>zichtbaar</em> maakt op straat.",
   "svc.lead":"Eén aanspreekpunt, van ontwerp tot plaatsing: geen eindeloze onderaanneming, geen verrassingen in het resultaat.",
   "s1.t":"Lichtreclame","s1.p":"Verlichte doosletters, lichtbakken, ledstrips en uithangborden, zichtbaar bij dag en bij nacht.","s1.a":"Achterverlichting","s1.b":"Uithangbord",
   "s2.t":"Reliëfletters","s2.p":"Uitgesneden letters en logo’s in volume voor gevels, onthaal en showrooms.","s2.a":"Gevel","s2.b":"Binnen","s2.c":"Op maat",
@@ -463,7 +464,7 @@ const I18N = {
   "hero.title":"Your <em>graphic fingerprint</em>, from shopfront to van.",
   "hero.lead":"Illuminated signs, raised letters, vehicle lettering, shop windows and printing in every size. We design, make and install, from our workshop on Rue Wayez.",
   "hero.m1":"Workshop in Brussels","hero.m2":"On-site installation","hero.m3":"FR · NL · EN",
-  "svc.kicker":"What we do","svc.title":"Everything that makes a business visible on the street.",
+  "svc.kicker":"What we do","svc.title":"Everything that makes a business <em>visible</em> on the street.",
   "svc.lead":"One point of contact from mock-up to installation: no long chain of subcontractors, no surprises in the result.",
   "s1.t":"Illuminated signs","s1.p":"Backlit channel letters, light boxes, LED strips and projecting signs, visible by day and by night.","s1.a":"Backlighting","s1.b":"Projecting",
   "s2.t":"Raised letters","s2.p":"Cut-out letters and 3D logos for facades, receptions and showrooms.","s2.a":"Facade","s2.b":"Indoor","s2.c":"Custom",
