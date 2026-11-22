@@ -1,0 +1,44 @@
+PRINT54 — SITE WEB (version indépendante, novembre 2026)
+=========================================================
+
+Mise en ligne
+-------------
+Copier TOUT le contenu de ce dossier (index.html + dossier img/) à la racine
+de l'hébergement print54.be chez One.com (Gestionnaire de fichiers ou FTP),
+en remplaçant la page "Ce site Web est en construction".
+Aucun serveur, aucune base de données : c'est un site statique.
+
+À compléter avant la mise en ligne (recherche "TODO" ou les points ci-dessous)
+----------------------------------------------------------------------------
+1. WhatsApp : dans index.html, ligne  const WHATSAPP = "";
+   mettre le numéro au format 32470123456 → le bouton apparaît tout seul.
+2. Horaires d'ouverture : bloc "Horaires" (section Contact), en FR et NL.
+3. Numéro de TVA : commentaire dans le pied de page.
+4. Textes néerlandais : à faire relire par un néerlandophone.
+5. Vérifier avec le client : liste des services (petit format, pose),
+   et que toutes les réalisations de la galerie sont bien les leurs
+   (certaines photos viennent de coupdpub.be).
+6. Lien Facebook : remplacer par l'adresse exacte de la page Print54-BXL.
+
+Formulaire de devis
+-------------------
+Il ouvre la messagerie du visiteur avec la demande pré-remplie vers
+info@print54.be. Pour un envoi direct sans messagerie : brancher Formspree
+(gratuit) ou le formulaire One.com.
+
+Origine des éléments (preuve de création indépendante)
+------------------------------------------------------
+- Code, mise en page, textes FR/NL : écrits de zéro le 22/11/2026.
+- Logo : vectorisé le 22/11/2026 à partir du logo public de la page
+  Facebook Print54-BXL (photo de profil du 08/02/2024).
+- Photos : publications Facebook/Instagram de Print54 et site coupdpub.be.
+- Slogan « Votre empreinte graphique » : repris du totem du showroom Print54.
+- Polices : polices système, aucune police tierce intégrée.
+Rien n'a été repris de la maquette zirariyassin.github.io/Print54.
+
+Fichiers du logo (img/)
+-----------------------
+logo-horizontal-noir.svg / -blanc.svg   en-tête et pied de page
+logo-print54-noir.svg / -blanc.svg      logo complet, fond clair / sombre
+logo-print54-original.svg               logo complet sur fond noir
+favicon.svg, apple-touch-icon.png, og-print54.jpg (aperçu réseaux sociaux)
