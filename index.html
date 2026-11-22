@@ -138,8 +138,10 @@ section{padding:84px 0}
 
 /* étapes */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:1.5px solid var(--ink)}
-.step{padding:24px 22px 8px 0}
+.step{padding:24px 22px 8px 0;display:flex;flex-direction:column}
+.step::before{order:1}.step h3{order:2}.step p{order:3}
 .step::before{counter-increment:s;content:"0" counter(s);font-weight:800;font-size:44px;letter-spacing:-.04em;display:block;-webkit-text-stroke:1.5px var(--ink);color:transparent;margin-bottom:6px}
+.step svg{display:block;width:100%;height:auto;margin-bottom:16px}
 .step h3{margin:0 0 6px;font-size:19px}
 .step p{margin:0;color:var(--ink-2);font-size:15.5px}
 
@@ -231,6 +233,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
   .services,.steps,.row,.foot{grid-template-columns:1fr}
   section{padding:60px 0}
   .header-cta{display:none}
+  .step svg{max-width:240px}
   .gallery{columns:2;column-gap:10px}.work{margin-bottom:10px}
   .work figcaption{font-size:12px;padding:22px 9px 8px}.work figcaption b{font-size:13px}
 }
@@ -344,10 +347,36 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
       <h2 data-i18n="m.title">Quatre étapes, un seul atelier.</h2></div>
     </div>
     <div class="steps reveal">
-      <div class="step"><h3 data-i18n="m1.t">Prise de mesures</h3><p data-i18n="m1.p">On écoute votre projet, on passe voir la façade ou le véhicule si besoin.</p></div>
-      <div class="step"><h3 data-i18n="m2.t">Maquette &amp; devis</h3><p data-i18n="m2.p">Vous recevez un visuel en situation et un prix clair avant toute fabrication.</p></div>
-      <div class="step"><h3 data-i18n="m3.t">Fabrication</h3><p data-i18n="m3.p">Découpe, impression et assemblage dans notre atelier d’Anderlecht.</p></div>
-      <div class="step"><h3 data-i18n="m4.t">Pose</h3><p data-i18n="m4.p">Installation par notre équipe, sur votre façade, vitrine ou véhicule.</p></div>
+      <div class="step"><svg viewBox="0 0 220 140" aria-hidden="true"><rect x="0" y="0" width="220" height="140" rx="14" fill="#ebe7de"/>
+<rect x="40" y="46" width="140" height="76" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="46" width="140" height="18" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<rect x="54" y="76" width="44" height="46" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="112" y="76" width="54" height="30" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 30v10M180 30v10M40 35h140" stroke="#1ea7dc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+<path d="M46 31l-6 4 6 4M174 31l6 4-6 4" stroke="#1ea7dc" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="92" y="26" width="36" height="16" rx="4" fill="#1ea7dc"/><text x="110" y="38" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">4,0 m</text>
+<path d="M194 46v18M189 46h10M189 64h10" stroke="#e2187d" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg><h3 data-i18n="m1.t">Prise de mesures</h3><p data-i18n="m1.p">On écoute votre projet, on passe voir la façade ou le véhicule si besoin.</p></div>
+      <div class="step"><svg viewBox="0 0 220 140" aria-hidden="true"><rect x="0" y="0" width="220" height="140" rx="14" fill="#ebe7de"/>
+<rect x="24" y="22" width="122" height="86" rx="6" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 34h122" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="32" cy="28" r="2" fill="#151515"/><circle cx="39" cy="28" r="2" fill="#151515"/>
+<rect x="42" y="50" width="86" height="46" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="42" y="50" width="86" height="14" fill="#e2187d" stroke="#151515" stroke-width="2.5"/>
+<path d="M56 57h30" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+<path d="M70 108l-6 14h42l-6-14" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="132" y="48" width="64" height="80" rx="4" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M142 62h36M142 72h44M142 82h28M142 98h44" stroke="#151515" stroke-width="2" stroke-linecap="round"/>
+<circle cx="182" cy="114" r="11" fill="#f5e400" stroke="#151515" stroke-width="2.5"/><path d="M177 114l4 4 7-8" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><h3 data-i18n="m2.t">Maquette &amp; devis</h3><p data-i18n="m2.p">Vous recevez un visuel en situation et un prix clair avant toute fabrication.</p></div>
+      <div class="step"><svg viewBox="0 0 220 140" aria-hidden="true"><rect x="0" y="0" width="220" height="140" rx="14" fill="#ebe7de"/>
+<circle cx="110" cy="34" r="12" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="110" cy="34" r="4" fill="#151515"/>
+<rect x="30" y="44" width="160" height="30" rx="6" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="150" y="51" width="28" height="10" rx="2" fill="#1ea7dc" stroke="#151515" stroke-width="2"/>
+<path d="M56 74v46M164 74v46M48 120h16M156 120h16" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M66 74h88l-6 30H72z" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="80" y="80" width="18" height="16" fill="#1ea7dc"/><rect x="100" y="80" width="18" height="16" fill="#e2187d"/><rect x="120" y="80" width="18" height="16" fill="#f5e400"/>
+<path d="M66 74h88l-6 30H72z" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><h3 data-i18n="m3.t">Fabrication</h3><p data-i18n="m3.p">Découpe, impression et assemblage dans notre atelier d’Anderlecht.</p></div>
+      <div class="step"><svg viewBox="0 0 220 140" aria-hidden="true"><rect x="0" y="0" width="220" height="140" rx="14" fill="#ebe7de"/>
+<rect x="34" y="40" width="152" height="86" fill="#ffffff" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="46" y="48" width="128" height="22" rx="3" fill="#f5e400" stroke="#151515" stroke-width="2.5"/>
+<path d="M60 59h50M118 59h40" stroke="#151515" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M60 48l-6-10M100 48l0-10M140 48l0-10M168 48l6-10" stroke="#e2187d" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+<rect x="50" y="84" width="40" height="42" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="104" y="84" width="66" height="26" fill="none" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140 128l26-62M160 132l26-62M144 118h18M149 106h18M154 94h18M159 82h18" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><h3 data-i18n="m4.t">Pose</h3><p data-i18n="m4.p">Installation par notre équipe, sur votre façade, vitrine ou véhicule.</p></div>
     </div>
   </div>
 </section>
