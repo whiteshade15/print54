@@ -21,7 +21,9 @@ Aucun serveur, aucune base de données : c'est un site statique.
 5. Vérifier avec le client : liste des services (petit format, pose),
    et que toutes les réalisations de la galerie sont bien les leurs
    (certaines photos viennent de coupdpub.be).
-6. Lien Facebook : remplacer par l'adresse exacte de la page Print54-BXL.
+6. Note Google (4,4/5 · 21 avis, relevée le 22/11/2026) : valeur fixe à mettre à jour
+   à la main de temps en temps (rechercher "rev.score" et "21 avis" dans index.html).
+7. Lien Facebook : remplacer par l'adresse exacte de la page Print54-BXL.
 
 Formulaire de devis
 -------------------

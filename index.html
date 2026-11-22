@@ -167,6 +167,17 @@ textarea{min-height:120px;resize:vertical}
 .note{font-size:13.5px;color:var(--ink-2);margin:0}
 .wa{display:none}
 
+/* avis */
+.rating{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;transition:border-color .2s}
+.rating:hover{border-color:var(--ink)}
+.rating .score{font-weight:800;font-size:17px}
+.stars{position:relative;display:inline-block;font-size:18px;line-height:1;letter-spacing:2px;color:#d9d4c8}
+.stars::before{content:"★★★★★"}
+.stars i{position:absolute;inset:0;overflow:hidden;color:#f4b400;white-space:nowrap;font-style:normal}
+.stars i::before{content:"★★★★★"}
+.rating .src{color:var(--ink-2)}
+.rating .src b{color:var(--ink);font-weight:700}
+
 /* carte */
 .map-card{margin-top:28px;display:grid;grid-template-columns:1.6fr 1fr;align-items:stretch}
 .map-wrap{position:relative;min-height:360px;background:var(--paper-2)}
@@ -258,6 +269,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
         <a class="btn btn-ink" href="#contact" data-i18n="cta.quote">Demander un devis</a>
         <a class="btn btn-line" href="tel:+3225345600">02 534 56 00</a>
       </div>
+      <div style="margin-top:22px"><a class="rating" href="https://search.google.com/local/reviews?placeid=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" aria-label="4,4 / 5 – 21 avis Google" data-i18n-aria="rev.aria"><span class="score" data-i18n="rev.score">4,4</span><span class="stars" aria-hidden="true"><i style="width:88%"></i></span><span class="src" data-i18n-html="rev.src"><b>21 avis</b> Google</span></a></div>
       <div class="hero-meta">
         <span data-i18n="hero.m1">Atelier à Bruxelles</span>
         <span data-i18n="hero.m2">Pose sur place</span>
@@ -403,6 +415,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
         <p style="margin:0">Rue Wayez 54<br>1070 Anderlecht</p>
         <a class="btn btn-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=Print54%2C+Rue+Wayez+54%2C+1070+Anderlecht&amp;destination_place_id=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" data-i18n="map.google">Itinéraire Google Maps</a>
         <a class="btn btn-line" href="https://waze.com/ul?ll=50.8361428%2C4.3151683&amp;navigate=yes" target="_blank" rel="noopener" data-i18n="map.waze">Itinéraire Waze</a>
+        <div><a class="rating" style="margin-top:4px" href="https://search.google.com/local/reviews?placeid=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" aria-label="4,4 / 5 – 21 avis Google" data-i18n-aria="rev.aria"><span class="score" data-i18n="rev.score">4,4</span><span class="stars" aria-hidden="true"><i style="width:88%"></i></span><span class="src" data-i18n-html="rev.src"><b>21 avis</b> Google</span></a></div>
         <span class="map-credit">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
       </div>
     </div>
@@ -484,7 +497,7 @@ const I18N = {
   "q.err":"Vul uw naam, telefoon en bericht in.",
   "f.about":"Gevelreclame, belettering en drukwerk in Brussel.","f.where":"Atelier","f.follow":"Volg ons",
   "f.legal":"De getoonde merken en logo’s behoren toe aan hun respectieve eigenaars.",
-  "lb.close":"Sluiten","map.activate":"Tik om de kaart te verschuiven","map.title":"Zo vindt u ons","map.google":"Route via Google Maps","map.waze":"Route via Waze"
+  "lb.close":"Sluiten","rev.score":"4,4","rev.src":"<b>21 reviews</b> op Google","rev.aria":"4,4 / 5 – 21 Google-reviews","map.activate":"Tik om de kaart te verschuiven","map.title":"Zo vindt u ons","map.google":"Route via Google Maps","map.waze":"Route via Waze"
  },
  en:{
   "skip":"Skip to content","nav.services":"Services","nav.work":"Our work","nav.method":"How we work","nav.contact":"Contact","menu":"Menu",
@@ -517,7 +530,7 @@ const I18N = {
   "q.err":"Please fill in your name, phone and message.",
   "f.about":"Signs, lettering and printing in Brussels.","f.where":"Workshop","f.follow":"Follow us",
   "f.legal":"Brands and logos shown belong to their respective owners.",
-  "lb.close":"Close","map.activate":"Tap to move the map","map.title":"How to find us","map.google":"Directions on Google Maps","map.waze":"Directions on Waze"
+  "lb.close":"Close","rev.score":"4.4","rev.src":"<b>21 reviews</b> on Google","rev.aria":"4.4 / 5 – 21 Google reviews","map.activate":"Tap to move the map","map.title":"How to find us","map.google":"Directions on Google Maps","map.waze":"Directions on Waze"
  }
 };
 const FR_ERR="Merci d’indiquer votre nom, votre téléphone et votre message.";
@@ -527,6 +540,7 @@ const fr={};
 document.querySelectorAll("[data-i18n]").forEach(e=>fr[e.dataset.i18n]=e.textContent);
 document.querySelectorAll("[data-i18n-html]").forEach(e=>fr[e.dataset.i18nHtml]=e.innerHTML);
 document.querySelectorAll("[data-i18n-ph]").forEach(e=>fr[e.dataset.i18nPh]=e.placeholder);
+document.querySelectorAll("[data-i18n-aria]").forEach(e=>fr[e.dataset.i18nAria]=e.getAttribute("aria-label"));
 const t=k=>lang==="fr"?fr[k]:(I18N[lang][k]??fr[k]);
 const pick=(a,b,c)=>lang==="fr"?a:lang==="nl"?b:c;
 
@@ -535,6 +549,7 @@ function setLang(l){
   document.querySelectorAll("[data-i18n]").forEach(e=>e.textContent=t(e.dataset.i18n));
   document.querySelectorAll("[data-i18n-html]").forEach(e=>e.innerHTML=t(e.dataset.i18nHtml));
   document.querySelectorAll("[data-i18n-ph]").forEach(e=>e.placeholder=t(e.dataset.i18nPh));
+  document.querySelectorAll("[data-i18n-aria]").forEach(e=>e.setAttribute("aria-label",t(e.dataset.i18nAria)));
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===l));
   renderGallery();
   if(window.waUpd)waUpd();
