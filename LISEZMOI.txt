@@ -10,8 +10,7 @@ Aucun serveur, aucune base de données : c'est un site statique.
 
 À compléter avant la mise en ligne (recherche "TODO" ou les points ci-dessous)
 ----------------------------------------------------------------------------
-1. WhatsApp 0477 09 18 97 : intégré. À FAIRE CONFIRMER par Print54 (numéro repris
-   de la maquette du démarcheur, il doit bien appartenir à Print54).
+1. WhatsApp 0477 09 18 97 : intégré et confirmé comme numéro de Print54 (22/11/2026).
 2. Horaires (lun–ven 9 h–17 h, fermé le week-end) : déjà intégrés, à confirmer avec le client.
 3. Numéro de TVA : commentaire dans le pied de page.
 4. Textes néerlandais et anglais : à faire relire (surtout le néerlandais).
