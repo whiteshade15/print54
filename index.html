@@ -38,6 +38,7 @@
     "addressRegion": "Bruxelles-Capitale",
     "addressCountry": "BE"
   },
+  "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],
   "areaServed": "Bruxelles",
   "sameAs": ["https://www.instagram.com/print54bxl/"]
 }
@@ -335,7 +336,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
               <div><a href="mailto:info@print54.be">info@print54.be</a></div></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-              <div data-i18n="c.hours">Horaires : appelez-nous avant de passer à l’atelier.</div></li>
+              <div><b data-i18n="c.hours.t">Lundi – vendredi : 9 h – 17 h</b><br><span class="note" data-i18n="c.hours.s">Fermé le samedi et le dimanche</span></div></li>
           </ul>
           <p style="margin:22px 0 0" class="wa"><a class="btn btn-line" id="wa-link" href="#" target="_blank" rel="noopener">WhatsApp</a></p>
         </div>
@@ -377,7 +378,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
     <div class="foot">
       <div><img src="img/logo-horizontal-blanc.svg" alt="Print54 Sign &amp; Print" width="230" height="52">
         <p style="margin:0" data-i18n="f.about">Enseignes, lettrage et impression à Bruxelles.</p></div>
-      <div><h4 data-i18n="f.where">Atelier</h4>Rue Wayez 54<br>1070 Anderlecht<br><a href="tel:+3225345600">02 534 56 00</a><br><a href="mailto:info@print54.be">info@print54.be</a></div>
+      <div><h4 data-i18n="f.where">Atelier</h4>Rue Wayez 54<br>1070 Anderlecht<br><span data-i18n="c.hours.t">Lundi – vendredi : 9 h – 17 h</span><br><a href="tel:+3225345600">02 534 56 00</a><br><a href="mailto:info@print54.be">info@print54.be</a></div>
       <div><h4 data-i18n="f.follow">Suivez-nous</h4><a href="https://www.instagram.com/print54bxl/" target="_blank" rel="noopener">Instagram · print54bxl</a><br><a href="https://www.facebook.com/search/top?q=Print54-BXL" target="_blank" rel="noopener">Facebook · Print54-BXL</a></div>
     </div>
     <div class="legal"><span>© <span id="yr">2026</span> Print54 Sign &amp; Print<!-- TVA : BE0XXX.XXX.XXX à compléter --></span><span data-i18n="f.legal">Les marques et logos présentés appartiennent à leurs propriétaires respectifs.</span></div>
@@ -437,7 +438,7 @@ const I18N = {
   "m3.t":"Productie","m3.p":"Snijden, drukken en assembleren in ons atelier in Anderlecht.",
   "m4.t":"Plaatsing","m4.p":"Montage door ons team, op uw gevel, etalage of voertuig.",
   "c.kicker":"Contact & offerte","c.title":"Laten we over uw project praten.","c.lead":"Beschrijf wat u nodig heeft: wij komen terug met een voorstel en een prijs.",
-  "c.metro":"Anderlecht · Brussel","c.hours":"Openingsuren: bel ons even voor u naar het atelier komt.",
+  "c.metro":"Anderlecht · Brussel","c.hours.t":"Maandag – vrijdag: 9 u – 17 u","c.hours.s":"Gesloten op zaterdag en zondag",
   "q.type":"Uw project","q.t1":"Gevelreclame","q.t2":"Reliëfletters","q.t3":"Voertuig","q.t4":"Etalage","q.t5":"Drukwerk",
   "q.name":"Naam","q.company":"Bedrijf","q.phone":"Telefoon","q.size":"Afmetingen of aantal (indien gekend)","q.size.ph":"bv. gevel 4 m × 0,8 m, 2 bestelwagens…",
   "q.msg":"Uw bericht","q.msg.ph":"Wat u voor ogen heeft, het adres van de werf, uw timing…","q.send":"Aanvraag versturen",
