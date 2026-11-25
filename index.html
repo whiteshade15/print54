@@ -256,6 +256,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
 }
 
 /* Ajouts du 23/11/2026 */
+.avis-lien{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:#e2187d;text-decoration-thickness:2px;text-underline-offset:3px}
 button:focus-visible,a:focus-visible,iframe:focus-visible{outline:3px solid #e2187d;outline-offset:3px}
 .work>figure{margin:0;display:contents}
 .wa-fab{animation:wa-vibre 4s ease-in-out 3.5s infinite}
@@ -504,7 +505,8 @@ setTimeout(end,3000);
         <p style="margin:0">Rue Wayez 54<br>1070 Anderlecht</p>
         <a class="btn btn-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=Print54%2C+Rue+Wayez+54%2C+1070+Anderlecht&amp;destination_place_id=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" data-i18n="map.google">Itinéraire Google Maps</a>
         <a class="btn btn-waze" href="https://waze.com/ul?ll=50.8361428%2C4.3151683&amp;navigate=yes" target="_blank" rel="noopener" data-i18n="map.waze">Itinéraire Waze</a>
-        <div><a class="rating" style="margin-top:4px" href="https://search.google.com/local/reviews?placeid=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" aria-label="4,4 / 5 – 21 avis Google" data-i18n-aria="rev.aria"><span class="score" data-i18n="rev.score">4,4</span><span class="stars" aria-hidden="true"><i style="width:88%"></i></span><span class="src" data-i18n-html="rev.src"><b>21 avis</b> Google</span></a></div>
+        <div><a class="rating" style="margin-top:4px" href="https://search.google.com/local/reviews?placeid=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" aria-label="4,4 / 5 – 21 avis Google" data-i18n-aria="rev.aria"><span class="score" data-i18n="rev.score">4,4</span><span class="stars" aria-hidden="true"><i style="width:88%"></i></span><span class="src" data-i18n-html="rev.src"><b>21 avis</b> Google</span></a>
+        <a class="avis-lien" href="https://search.google.com/local/writereview?placeid=ChIJVXrYphvEw0cRHWjKTvQ2EU0" target="_blank" rel="noopener" data-i18n="rev.write">Client de Print54 ? Laissez un avis sur Google</a></div>
         <span class="map-credit">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
       </div>
     </div>
@@ -586,7 +588,7 @@ const I18N = {
   "q.err":"Vul uw naam, telefoon en bericht in.",
   "f.about":"Gevelreclame, belettering en drukwerk in Brussel.","f.where":"Atelier","f.follow":"Volg ons",
   "f.legal":"De getoonde merken en logo’s behoren toe aan hun respectieve eigenaars.",
-  "lb.close":"Sluiten","rev.score":"4,4","rev.src":"<b>21 reviews</b> op Google","rev.aria":"4,4 / 5 – 21 Google-reviews","map.activate":"Tik om de kaart te verschuiven","map.title":"Zo vindt u ons","map.google":"Route via Google Maps","map.waze":"Route via Waze"
+  "lb.close":"Sluiten","rev.score":"4,4","rev.src":"<b>21 reviews</b> op Google","rev.aria":"4,4 / 5 – 21 Google-reviews","rev.write":"Klant van Print54? Laat een review achter op Google","map.activate":"Tik om de kaart te verschuiven","map.title":"Zo vindt u ons","map.google":"Route via Google Maps","map.waze":"Route via Waze"
  },
  en:{
   "skip":"Skip to content","nav.services":"Services","nav.work":"Our work","nav.method":"How we work","nav.contact":"Contact","menu":"Menu",
@@ -619,7 +621,7 @@ const I18N = {
   "q.err":"Please fill in your name, phone and message.",
   "f.about":"Signs, lettering and printing in Brussels.","f.where":"Workshop","f.follow":"Follow us",
   "f.legal":"Brands and logos shown belong to their respective owners.",
-  "lb.close":"Close","rev.score":"4.4","rev.src":"<b>21 reviews</b> on Google","rev.aria":"4.4 / 5 – 21 Google reviews","map.activate":"Tap to move the map","map.title":"How to find us","map.google":"Directions on Google Maps","map.waze":"Directions on Waze"
+  "lb.close":"Close","rev.score":"4.4","rev.src":"<b>21 reviews</b> on Google","rev.aria":"4.4 / 5 – 21 Google reviews","rev.write":"A Print54 customer? Leave us a Google review","map.activate":"Tap to move the map","map.title":"How to find us","map.google":"Directions on Google Maps","map.waze":"Directions on Waze"
  }
 };
 const FR_ERR="Merci d’indiquer votre nom, votre téléphone et votre message.";
