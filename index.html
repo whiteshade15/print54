@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow"><!-- version de test : retirer cette ligne pour la mise en ligne sur print54.be -->
-<title>Print54 · Enseignes lumineuses, lettrage véhicule et impression à Anderlecht (Bruxelles)</title>
-<meta name="description" content="Print54 Sign &amp; Print, atelier à Anderlecht : enseignes lumineuses, lettres en relief, lettrage de véhicules, vitrophanie et impression grand et petit format. Devis rapide.">
+<title>Enseignes &amp; lettrage de véhicules à Bruxelles | Print54</title>
+<meta name="description" content="Atelier d’enseignes à Anderlecht : enseignes lumineuses, lettres en relief, lettrage de véhicules, vitrophanie et impression. Pose dans toute la Belgique.">
 <link rel="canonical" href="https://whiteshade15.github.io/print54/">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -256,11 +256,13 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
 }
 
 /* Ajouts du 23/11/2026 */
+button:focus-visible,a:focus-visible,iframe:focus-visible{outline:3px solid #e2187d;outline-offset:3px}
+.work>figure{margin:0;display:contents}
 .wa-fab{animation:wa-vibre 4s ease-in-out 3.5s infinite}
 .wa-fab:hover{animation-play-state:paused}
 @keyframes wa-vibre{0%,82%,100%{transform:none}84%{transform:rotate(-14deg) scale(1.08)}86%{transform:rotate(12deg) scale(1.08)}88%{transform:rotate(-10deg) scale(1.08)}90%{transform:rotate(8deg) scale(1.05)}92%{transform:rotate(-4deg)}94%{transform:none}}
-.btn-wa{background:#1da851;color:#fff;border-color:#1da851}
-.btn-wa:hover{background:#178a43;border-color:#178a43;color:#fff}
+.btn-wa{background:#15803d;color:#fff;border-color:#15803d}
+.btn-wa:hover{background:#166534;border-color:#166534;color:#fff}
 .btn-waze{background:#33ccff;color:#0b1b2b;border-color:#33ccff}
 .btn-waze:hover{background:#12b5ef;border-color:#12b5ef;color:#0b1b2b}
 .card-sombre{background:#151515;color:#f5f3ee;border-color:#151515}
@@ -331,7 +333,7 @@ setTimeout(end,3000);
     </div>
     <div class="collage">
       <span class="mark tl" aria-hidden="true"></span><span class="mark br" aria-hidden="true"></span>
-      <figure><img src="img/le-zee.webp" alt="Enseigne lumineuse de la poissonnerie Le Zee, de nuit" loading="eager" fetchpriority="high"></figure>
+      <figure><img src="img/le-zee.webp" srcset="img/le-zee-640.webp 640w, img/le-zee.webp 1000w" sizes="(max-width:760px) 60vw, 25vw" alt="Enseigne lumineuse de la poissonnerie Le Zee, de nuit" loading="eager" fetchpriority="high"></figure>
       <figure><img src="img/am-thermo.webp" alt="Lettrage d’une camionnette AM Thermo Services"></figure>
       <figure><img src="img/israya-facade.webp" alt="Façade et vitrines de la boutique Israya"></figure>
     </div>
@@ -646,8 +648,9 @@ function setLang(l){
 const gal=document.getElementById("gallery");let filter="all";let expanded=false;const SHOW=6;
 const moreBtn=document.getElementById("more-btn");
 function renderGallery(){
-  gal.innerHTML=WORKS.map(([f,name,cat,fr_,nl,en])=>`<figure class="work" tabindex="0" role="button" aria-label="${pick("Agrandir :","Vergroten:","Enlarge:")} ${name}" data-cat="${cat}">
-    <img src="img/${f}.webp" alt="${name} — ${pick(fr_,nl,en)}" loading="lazy"><figcaption><b>${name==="Salon de coiffure"?pick(name,"Kapsalon","Hair salon"):name}</b>${pick(fr_,nl,en)}</figcaption></figure>`).join("");
+  const BIG=new Set(["chicken-ky", "ecowayez", "enata", "esperance-sante", "fitroom", "gala", "kandinsky", "le-30", "le-zee", "mister-pepe", "multinvest", "orca-sanitaire", "showroom", "velo-goffeau"]);
+  gal.innerHTML=WORKS.map(([f,name,cat,fr_,nl,en])=>`<div class="work" tabindex="0" role="button" aria-label="${pick("Agrandir :","Vergroten:","Enlarge:")} ${name}" data-cat="${cat}"><figure>
+    <img src="img/${f}.webp"${BIG.has(f)?` srcset="img/${f}-640.webp 640w, img/${f}.webp 1000w" sizes="(max-width:760px) 50vw, 30vw"`:""} alt="${name} — ${pick(fr_,nl,en)}" loading="lazy"><figcaption><b>${name==="Salon de coiffure"?pick(name,"Kapsalon","Hair salon"):name}</b>${pick(fr_,nl,en)}</figcaption></figure></div>`).join("");
   applyView();
 }
 function applyView(){

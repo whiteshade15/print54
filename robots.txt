@@ -1,0 +1,8 @@
+# Print54 Sign & Print — à placer à la racine de print54.be
+# Tous les robots sont autorisés, y compris les moteurs de recherche IA
+# (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Claude-User…).
+User-agent: *
+Allow: /
+Disallow: /v2/
+
+Sitemap: https://www.print54.be/sitemap.xml

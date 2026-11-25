@@ -12,6 +12,15 @@ de l'hébergement print54.be chez One.com (Gestionnaire de fichiers ou FTP),
 en remplaçant la page "Ce site Web est en construction".
 Aucun serveur, aucune base de données : c'est un site statique.
 
+Fichiers ajoutés le 25/11/2026 (référencement)
+-----------------------------------------------
+robots.txt, sitemap.xml, llms.txt (pour les IA de recherche), 404.html.
+Au moment de la mise en ligne sur print54.be :
+- index.html : retirer la balise noindex ; canonical et og:url -> https://www.print54.be/ ;
+  og:image -> https://www.print54.be/img/og-print54.jpg
+- 404.html : remplacer « /print54/ » par « / » (2 endroits)
+- img/*-640.webp : versions légères des photos pour les téléphones, à copier aussi.
+
 À compléter avant la mise en ligne (recherche "TODO" ou les points ci-dessous)
 ----------------------------------------------------------------------------
 1. WhatsApp 0477 09 18 97 : intégré et confirmé comme numéro de Print54 (22/11/2026).
