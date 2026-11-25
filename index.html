@@ -58,7 +58,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.55 var(--sans)}
 img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
@@ -72,13 +72,13 @@ a{color:inherit}
 header{position:sticky;top:0;z-index:40;background:rgba(245,243,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:20px;height:72px}
 .brand img{height:44px;width:auto}
-nav{margin-left:auto;display:flex;gap:26px;font-weight:600;font-size:15px}
-nav a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+nav{margin-left:auto;display:flex;gap:24px;font-weight:600;font-size:16px}
+nav a{text-decoration:none;padding:8px 0;border-bottom:2px solid transparent}
 nav a:hover{border-color:var(--m)}
 .lang{display:flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;font-weight:700;font-size:13px}
-.lang button{all:unset;cursor:pointer;padding:6px 11px}
+.lang button{all:unset;cursor:pointer;padding:8px 12px}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;border-radius:999px;padding:14px 24px;border:2px solid var(--ink);cursor:pointer;font-size:16px;font-family:inherit}
+.btn{display:inline-flex;align-items:center;gap:12px;font-weight:700;text-decoration:none;border-radius:999px;padding:16px 24px;border:2px solid var(--ink);cursor:pointer;font-size:16px;font-family:inherit}
 .btn-ink{background:var(--ink);color:var(--paper)}
 .btn-ink:hover{background:var(--m);border-color:var(--m)}
 .btn-line{background:transparent;color:var(--ink)}
@@ -88,14 +88,14 @@ nav a:hover{border-color:var(--m)}
 /* hero */
 .hero{padding:64px 0 72px}
 .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
-.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-weight:600;font-size:14px;letter-spacing:.01em;color:var(--ink-2)}
 .dots{display:inline-flex;gap:4px}.dots b{width:9px;height:9px;border-radius:50%}
 .dots b:nth-child(1){background:var(--c)}.dots b:nth-child(2){background:var(--m)}.dots b:nth-child(3){background:var(--y)}.dots b:nth-child(4){background:var(--k)}
-h1{font-size:clamp(40px,6vw,74px);line-height:1.02;letter-spacing:-.035em;margin:18px 0 22px;font-weight:800}
+h1{font-size:clamp(40px,6vw,74px);line-height:1.02;letter-spacing:-.035em;margin:20px 0 24px;font-weight:800}
 h1 em,.sec-head h2 em{font-style:normal;background:linear-gradient(transparent 62%,var(--y) 62%,var(--y) 92%,transparent 92%)}
-.lead{font-size:19px;color:var(--ink-2);max-width:34em;margin:0 0 30px}
+.lead{font-size:18px;color:var(--ink-2);max-width:34em;margin:0 0 32px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero-meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--ink-2)}
+.hero-meta{margin-top:32px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:16px;color:var(--ink-2)}
 .hero-meta span::before{content:"✓ ";color:var(--m);font-weight:800}
 .collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:200px 200px;gap:12px;position:relative}
 .collage figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--paper-2)}
@@ -117,69 +117,69 @@ section{padding:84px 0}
 
 /* services */
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 24px 24px;position:relative;overflow:hidden}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px 24px 24px;position:relative;overflow:hidden}
 .svc .n{font-weight:800;font-size:13px;letter-spacing:.1em;color:var(--ink-2)}
-.svc h3{margin:10px 0 8px;font-size:22px;letter-spacing:-.02em}
+.svc h3{margin:12px 0 8px;font-size:22px;letter-spacing:-.02em}
 .svc p{margin:0;color:var(--ink-2);font-size:16px}
 .svc::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--accent)}
-.svc ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
-.svc li{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:var(--paper)}
+.svc ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.svc li{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--paper)}
 
 /* réalisations */
 .filters{display:flex;flex-wrap:wrap;gap:8px}
-.filters button{all:unset;cursor:pointer;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;border:1.5px solid #5a5650;color:var(--paper)}
+.filters button{all:unset;cursor:pointer;font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px;border:1.5px solid #5a5650;color:var(--paper)}
 .filters button[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
-.gallery{columns:3 300px;column-gap:14px}
-.work{break-inside:avoid;margin:0 0 14px;border-radius:12px;overflow:hidden;position:relative;cursor:zoom-in;background:#222}
+.gallery{columns:3 300px;column-gap:16px}
+.work{break-inside:avoid;margin:0 0 16px;border-radius:12px;overflow:hidden;position:relative;cursor:zoom-in;background:#222}
 .work img{width:100%;height:auto;transition:transform .5s}
 .work:hover img,.work:focus-visible img{transform:scale(1.03)}
 .work:focus-visible{outline:3px solid var(--y);outline-offset:3px}
-.work figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));font-size:14px;line-height:1.3}
+.work figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));font-size:14px;line-height:1.3}
 .work figcaption b{display:block;font-size:16px}
 .work[hidden]{display:none}
-.more-wrap{display:flex;justify-content:center;margin-top:26px}
-.more-btn{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;border:2px solid var(--paper);color:var(--paper)}
+.more-wrap{display:flex;justify-content:center;margin-top:24px}
+.more-btn{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:16px;padding:16px 24px;border-radius:999px;border:2px solid var(--paper);color:var(--paper)}
 .more-btn:hover,.more-btn:focus-visible{background:var(--paper);color:var(--ink)}
 .more-btn b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--y);color:var(--ink);font-size:18px;line-height:1}
 .more-btn[hidden]{display:none}
 
 /* étapes */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:1.5px solid var(--ink)}
-.step{padding:24px 22px 8px 0;display:flex;flex-direction:column}
+.step{padding:24px 24px 8px 0;display:flex;flex-direction:column}
 .step::before{order:1}.step h3{order:2}.step p{order:3}
-.step::before{counter-increment:s;content:"0" counter(s);font-weight:800;font-size:44px;letter-spacing:-.04em;display:block;-webkit-text-stroke:1.5px var(--ink);color:transparent;margin-bottom:6px}
+.step::before{counter-increment:s;content:"0" counter(s);font-weight:800;font-size:44px;letter-spacing:-.04em;display:block;-webkit-text-stroke:1.5px var(--ink);color:transparent;margin-bottom:8px}
 .step svg{display:block;width:100%;height:auto;margin-bottom:16px}
-.step h3{margin:0 0 6px;font-size:19px}
-.step p{margin:0;color:var(--ink-2);font-size:15.5px}
+.step h3{margin:0 0 8px;font-size:18px}
+.step p{margin:0;color:var(--ink-2);font-size:16px}
 
 /* atelier + devis */
 .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.card .pad{padding:26px}
+.card .pad{padding:24px}
 .atelier img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.info{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.info li{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+.info{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.info li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
 .info svg{width:22px;height:22px;margin-top:2px}
 .info a{font-weight:700}
-form{display:grid;gap:14px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-label{display:grid;gap:6px;font-weight:700;font-size:14px}
-input,select,textarea{font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%}
+form{display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:8px;font-weight:700;font-size:14px}
+input,select,textarea{font:inherit;font-weight:400;font-size:16px;padding:12px 16px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--c);background:#fff}
 textarea{min-height:120px;resize:vertical}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips label{all:unset;cursor:pointer}
 .chips input{position:absolute;opacity:0;width:1px;height:1px}
-.chips span{display:inline-block;font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper)}
+.chips span{display:inline-block;font-size:14px;font-weight:600;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper)}
 .chips input:checked+span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .chips input:focus-visible+span{outline:2px solid var(--c);outline-offset:2px}
-.note{font-size:13.5px;color:var(--ink-2);margin:0}
+.note{font-size:13px;color:var(--ink-2);margin:0}
 .wa{display:none}
 
 /* avis */
-.rating{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;transition:border-color .2s}
+.rating{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 12px;font-size:16px;transition:border-color .2s}
 .rating:hover{border-color:var(--ink)}
-.rating .score{font-weight:800;font-size:17px}
+.rating .score{font-weight:800;font-size:18px}
 .stars{position:relative;display:inline-block;font-size:18px;line-height:1;letter-spacing:2px;color:#d9d4c8}
 .stars::before{content:"★★★★★"}
 .stars i{position:absolute;inset:0;overflow:hidden;color:#f4b400;white-space:nowrap;font-style:normal}
@@ -192,20 +192,20 @@ textarea{min-height:120px;resize:vertical}
 .map-wrap{position:relative;min-height:360px;background:var(--paper-2)}
 .map-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .map-shield{position:absolute;inset:0;all:unset;position:absolute;inset:0;cursor:pointer;display:flex;align-items:flex-end;justify-content:center;padding-bottom:16px}
-.map-shield span{background:rgba(21,21,21,.85);color:#fff;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px}
-.map-side{padding:26px;display:flex;flex-direction:column;gap:12px;justify-content:center}
+.map-shield span{background:rgba(21,21,21,.85);color:#fff;font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px}
+.map-side{padding:24px;display:flex;flex-direction:column;gap:12px;justify-content:center}
 .map-side h3{margin:0;font-size:22px;letter-spacing:-.02em}
 .map-side .btn{justify-content:center}
 .map-credit{font-size:12px;color:var(--ink-2)}
 @media (max-width:760px){.map-card{grid-template-columns:1fr}.map-wrap{min-height:300px}}
 
 /* pied de page */
-footer{background:var(--ink);color:#cfcac0;padding:56px 0 28px;font-size:15px}
+footer{background:var(--ink);color:#cfcac0;padding:56px 0 28px;font-size:16px}
 .foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
-footer img{height:52px;width:auto;margin-bottom:14px}
-footer h4{color:#fff;margin:0 0 10px;font-size:15px}
+footer img{height:52px;width:auto;margin-bottom:16px}
+footer h4{color:#fff;margin:0 0 12px;font-size:16px}
 footer a{color:#fff}
-.legal{border-top:1px solid #333;margin-top:40px;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+.legal{border-top:1px solid #333;margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
 
 /* visionneuse */
 dialog{border:0;padding:0;background:transparent;max-width:min(1100px,94vw)}
@@ -240,7 +240,7 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
   .foot{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
-  nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:8px 24px 18px;border-bottom:1px solid var(--line)}
+  nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;padding:8px 24px 20px;border-bottom:1px solid var(--line)}
   nav.open{display:flex}
   nav a{padding:12px 0;border-bottom:1px solid var(--line)}
   .menu-btn{display:inline-flex;all:unset;cursor:pointer;font-weight:700;padding:8px 4px;margin-left:auto}
@@ -252,12 +252,12 @@ dialog button{all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;p
   section{padding:60px 0}
   .header-cta{display:none}
   .step svg{max-width:240px}
-  .gallery{columns:2;column-gap:10px}.work{margin-bottom:10px}
-  .work figcaption{font-size:12px;padding:22px 9px 8px}.work figcaption b{font-size:13px}
+  .gallery{columns:2;column-gap:12px}.work{margin-bottom:12px}
+  .work figcaption{font-size:12px;padding:24px 8px 8px}.work figcaption b{font-size:13px}
 }
 
 /* Ajouts du 23/11/2026 */
-.avis-lien{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:#e2187d;text-decoration-thickness:2px;text-underline-offset:3px}
+.avis-lien{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:#e2187d;text-decoration-thickness:2px;text-underline-offset:3px}
 button:focus-visible,a:focus-visible,iframe:focus-visible{outline:3px solid #e2187d;outline-offset:3px}
 .work>figure{margin:0;display:contents}
 .wa-fab{animation:wa-vibre 4s ease-in-out 3.5s infinite}
@@ -274,8 +274,8 @@ button:focus-visible,a:focus-visible,iframe:focus-visible{outline:3px solid #e21
 .card-sombre .chips input:checked+span{background:#f5e400;color:#151515;border-color:#f5e400}
 .card-sombre .note{color:#aaa}
 .card-sombre .btn-ink{background:#f5e400;color:#151515;border-color:#f5e400}
-.reseaux{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.reseaux a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:700;font-size:14.5px;color:#fff;text-decoration:none}
+.reseaux{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+.reseaux a{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;font-weight:700;font-size:14px;color:#fff;text-decoration:none}
 .reseaux svg{width:18px;height:18px;fill:currentColor}
 .r-insta{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888)}
 .r-fb{background:#1877f2}
@@ -320,7 +320,7 @@ setTimeout(end,3000);
   <div class="wrap hero-grid">
     <div>
       <span class="kicker"><span class="dots" aria-hidden="true"><b></b><b></b><b></b><b></b></span><span data-i18n="hero.kicker">Sign &amp; Print · Anderlecht</span></span>
-      <h1 data-i18n-html="hero.title">Votre <em>empreinte graphique</em>, de l’enseigne au véhicule.</h1>
+      <h1 data-i18n-html="hero.title">Votre <em>empreinte graphique</em>, de l’enseigne au véhicule</h1>
       <p class="lead" data-i18n="hero.lead">Enseignes lumineuses, lettres en relief, lettrage de véhicules, vitrines et impressions de tous formats. Nous concevons, fabriquons et posons, depuis notre atelier de la rue Wayez.</p>
       <div class="cta">
         <a class="btn btn-ink" href="#contact" data-i18n="cta.quote">Demander un devis</a>
@@ -346,7 +346,7 @@ setTimeout(end,3000);
   <div class="wrap">
     <div class="sec-head reveal">
       <div><span class="kicker" data-i18n="svc.kicker">Ce que nous faisons</span>
-      <h2 data-i18n-html="svc.title">Tout ce qui rend une entreprise <em>visible</em> dans la rue.</h2></div>
+      <h2 data-i18n-html="svc.title">Tout ce qui rend une entreprise <em>visible</em> dans la rue</h2></div>
       <p data-i18n="svc.lead">Un seul interlocuteur, de la maquette à la pose : pas de sous-traitance à rallonge, pas de surprise sur le rendu.</p>
     </div>
     <div class="services">
@@ -382,7 +382,7 @@ setTimeout(end,3000);
   <div class="wrap">
     <div class="sec-head reveal">
       <div><span class="kicker" data-i18n="work.kicker">Réalisations</span>
-      <h2 data-i18n="work.title">Des enseignes que vous avez peut-être déjà croisées.</h2></div>
+      <h2 data-i18n="work.title">Des enseignes que vous avez peut-être déjà croisées</h2></div>
       <div class="filters" role="group" aria-label="Filtrer">
         <button type="button" data-f="all" aria-pressed="true" data-i18n="f.all">Tout</button>
         <button type="button" data-f="ens" aria-pressed="false" data-i18n="f.ens">Enseignes</button>
@@ -399,7 +399,7 @@ setTimeout(end,3000);
   <div class="wrap">
     <div class="sec-head reveal">
       <div><span class="kicker" data-i18n="m.kicker">Méthode</span>
-      <h2 data-i18n="m.title">Quatre étapes, un seul atelier.</h2></div>
+      <h2 data-i18n="m.title">Quatre étapes, un seul atelier</h2></div>
     </div>
     <div class="steps reveal">
       <div class="step"><svg viewBox="0 0 220 140" aria-hidden="true"><rect x="0" y="0" width="220" height="140" rx="14" fill="#ebe7de"/>
@@ -440,7 +440,7 @@ setTimeout(end,3000);
   <div class="wrap">
     <div class="sec-head reveal">
       <div><span class="kicker" data-i18n="c.kicker">Contact &amp; devis</span>
-      <h2 data-i18n="c.title">Parlons de votre projet.</h2></div>
+      <h2 data-i18n="c.title">Parlons de votre projet</h2></div>
       <p data-i18n="c.lead">Décrivez-nous ce dont vous avez besoin : nous revenons vers vous avec une proposition et un prix.</p>
     </div>
     <div class="contact-grid">
@@ -562,10 +562,10 @@ const I18N = {
   "skip":"Naar de inhoud","nav.services":"Diensten","nav.work":"Realisaties","nav.method":"Werkwijze","nav.contact":"Contact","menu":"Menu",
   "cta.quote":"Offerte aanvragen",
   "hero.kicker":"Sign & Print · Anderlecht",
-  "hero.title":"Uw <em>grafische afdruk</em>, van gevel tot bestelwagen.",
+  "hero.title":"Uw <em>grafische afdruk</em>, van gevel tot bestelwagen",
   "hero.lead":"Lichtreclame, reliëfletters, voertuigbelettering, etalages en drukwerk in alle formaten. Wij ontwerpen, maken en plaatsen, vanuit ons atelier in de Wayezstraat.",
   "hero.m1":"Atelier in Brussel","hero.m2":"Plaatsing ter plaatse","hero.m3":"FR · NL · EN",
-  "svc.kicker":"Wat wij doen","svc.title":"Alles wat een zaak <em>zichtbaar</em> maakt op straat.",
+  "svc.kicker":"Wat wij doen","svc.title":"Alles wat een zaak <em>zichtbaar</em> maakt op straat",
   "svc.lead":"Eén aanspreekpunt, van ontwerp tot plaatsing: geen eindeloze onderaanneming, geen verrassingen in het resultaat.",
   "s1.t":"Lichtreclame","s1.p":"Verlichte doosletters, lichtbakken, ledstrips en uithangborden, zichtbaar bij dag en bij nacht.","s1.a":"Achterverlichting","s1.b":"Uithangbord",
   "s2.t":"Reliëfletters","s2.p":"Uitgesneden letters en logo’s in volume voor gevels, onthaal en showrooms.","s2.a":"Gevel","s2.b":"Binnen","s2.c":"Op maat",
@@ -573,14 +573,14 @@ const I18N = {
   "s4.t":"Etalages & raamfolie","s4.p":"Vinylbelettering, decorstickers, matglas- en microperforatiefolie voor uw ramen.","s4.a":"Matglas","s4.b":"Microperforatie","s4.c":"Decor",
   "s5.t":"Grootformaat drukwerk","s5.p":"Spandoeken, panelen, affiches en beursmateriaal, gedrukt in ons atelier.","s5.a":"Spandoeken","s5.b":"Panelen","s5.c":"Affiches",
   "s6.t":"Kleinformaat drukwerk","s6.p":"Visitekaartjes, flyers, folders en briefpapier in de kleuren van uw zaak.","s6.a":"Kaartjes","s6.b":"Briefpapier",
-  "work.kicker":"Realisaties","work.title":"Gevels die u misschien al bent tegengekomen.",
+  "work.kicker":"Realisaties","work.title":"Gevels die u misschien al bent tegengekomen",
   "f.all":"Alles","f.ens":"Gevelreclame","f.veh":"Voertuigen","f.vit":"Etalages",
-  "m.kicker":"Werkwijze","m.title":"Vier stappen, één atelier.",
+  "m.kicker":"Werkwijze","m.title":"Vier stappen, één atelier",
   "m1.t":"Opmeting","m1.p":"We luisteren naar uw project en komen indien nodig de gevel of het voertuig bekijken.",
   "m2.t":"Ontwerp & offerte","m2.p":"U krijgt een visual in situ en een duidelijke prijs vóór de productie start.",
   "m3.t":"Productie","m3.p":"Snijden, drukken en assembleren in ons atelier in Anderlecht.",
   "m4.t":"Plaatsing","m4.p":"Montage door ons team, op uw gevel, etalage of voertuig.",
-  "c.kicker":"Contact & offerte","c.title":"Laten we over uw project praten.","c.lead":"Beschrijf wat u nodig heeft: wij komen terug met een voorstel en een prijs.",
+  "c.kicker":"Contact & offerte","c.title":"Laten we over uw project praten","c.lead":"Beschrijf wat u nodig heeft: wij komen terug met een voorstel en een prijs.",
   "c.metro":"Anderlecht · Brussel","c.hours.t":"Maandag – vrijdag: 9 u – 17 u","c.hours.s":"Gesloten op zaterdag en zondag","c.zone.t":"Werkgebied: heel België","c.zone.s":"Gemaakt in Anderlecht, geplaatst in heel België",
   "q.type":"Uw project","q.t1":"Gevelreclame","q.t2":"Reliëfletters","q.t3":"Voertuig","q.t4":"Etalage","q.t5":"Drukwerk",
   "q.name":"Naam","q.company":"Bedrijf","q.phone":"Telefoon","q.size":"Afmetingen of aantal (indien gekend)","q.size.ph":"bv. gevel 4 m × 0,8 m, 2 bestelwagens…",
@@ -595,10 +595,10 @@ const I18N = {
   "skip":"Skip to content","nav.services":"Services","nav.work":"Our work","nav.method":"How we work","nav.contact":"Contact","menu":"Menu",
   "cta.quote":"Get a quote",
   "hero.kicker":"Sign & Print · Anderlecht",
-  "hero.title":"Your <em>graphic fingerprint</em>, from shopfront to van.",
+  "hero.title":"Your <em>graphic fingerprint</em>, from shopfront to van",
   "hero.lead":"Illuminated signs, raised letters, vehicle lettering, shop windows and printing in every size. We design, make and install, from our workshop on Rue Wayez.",
   "hero.m1":"Workshop in Brussels","hero.m2":"On-site installation","hero.m3":"FR · NL · EN",
-  "svc.kicker":"What we do","svc.title":"Everything that makes a business <em>visible</em> on the street.",
+  "svc.kicker":"What we do","svc.title":"Everything that makes a business <em>visible</em> on the street",
   "svc.lead":"One point of contact from mock-up to installation: no long chain of subcontractors, no surprises in the result.",
   "s1.t":"Illuminated signs","s1.p":"Backlit channel letters, light boxes, LED strips and projecting signs, visible by day and by night.","s1.a":"Backlighting","s1.b":"Projecting",
   "s2.t":"Raised letters","s2.p":"Cut-out letters and 3D logos for facades, receptions and showrooms.","s2.a":"Facade","s2.b":"Indoor","s2.c":"Custom",
@@ -606,14 +606,14 @@ const I18N = {
   "s4.t":"Shop windows & window film","s4.p":"Vinyl lettering, decorative stickers, frosted and one-way vision film for your glass.","s4.a":"Frosted","s4.b":"One-way vision","s4.c":"Decoration",
   "s5.t":"Large-format printing","s5.p":"Banners, panels, posters and display materials, printed in our workshop.","s5.a":"Banners","s5.b":"Panels","s5.c":"Posters",
   "s6.t":"Small-format printing","s6.p":"Business cards, flyers, leaflets and stationery in your brand colours.","s6.a":"Cards","s6.b":"Stationery",
-  "work.kicker":"Our work","work.title":"Signs you may already have walked past.",
+  "work.kicker":"Our work","work.title":"Signs you may already have walked past",
   "f.all":"All","f.ens":"Signs","f.veh":"Vehicles","f.vit":"Windows",
-  "m.kicker":"How we work","m.title":"Four steps, one workshop.",
+  "m.kicker":"How we work","m.title":"Four steps, one workshop",
   "m1.t":"Measuring up","m1.p":"We listen to your project and come to see the facade or vehicle if needed.",
   "m2.t":"Mock-up & quote","m2.p":"You receive an in-situ visual and a clear price before anything is made.",
   "m3.t":"Production","m3.p":"Cutting, printing and assembly in our Anderlecht workshop.",
   "m4.t":"Installation","m4.p":"Fitted by our team, on your facade, shop window or vehicle.",
-  "c.kicker":"Contact & quote","c.title":"Let’s talk about your project.","c.lead":"Tell us what you need: we will come back to you with a proposal and a price.",
+  "c.kicker":"Contact & quote","c.title":"Let’s talk about your project","c.lead":"Tell us what you need: we will come back to you with a proposal and a price.",
   "c.metro":"Anderlecht · Brussels","c.hours.t":"Monday – Friday: 9:00 – 17:00","c.hours.s":"Closed on Saturday and Sunday","c.zone.t":"Service area: all of Belgium","c.zone.s":"Made in Anderlecht, installed anywhere in Belgium",
   "q.type":"Your project","q.t1":"Sign","q.t2":"Raised letters","q.t3":"Vehicle","q.t4":"Shop window","q.t5":"Printing",
   "q.name":"Name","q.company":"Company","q.phone":"Phone","q.size":"Size or quantity (if known)","q.size.ph":"e.g. facade 4 m × 0.8 m, 2 vans…",
