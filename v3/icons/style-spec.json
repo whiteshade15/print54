@@ -1,0 +1,24 @@
+{
+  "name": "print54-icons",
+  "preset": "clean",
+  "grid": 24,
+  "strokeWidth": 1.5,
+  "strokeLinecap": "round",
+  "strokeLinejoin": "round",
+  "cornerRadius": 1.5,
+  "padding": 2,
+  "iconCount": 10,
+  "icons": [
+    "enseigne-lumineuse",
+    "lettres-relief",
+    "vehicule",
+    "vitrine",
+    "grand-format",
+    "petit-format",
+    "mesure",
+    "maquette",
+    "fabrication",
+    "pose"
+  ],
+  "generated": "2026-11-27"
+}
