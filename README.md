@@ -8,5 +8,7 @@ Voir `LISEZMOI.txt` pour la mise en ligne sur print54.be et les points à compl�
 - **V1** (22/11/2026) : à la racine — https://whiteshade15.github.io/print54/
 - **V2** (23/11/2026) : dossier `v2/` — https://whiteshade15.github.io/print54/v2/ (voir `v2/LISEZMOI.md`)
 
-Les deux versions sont des copies de test, non indexées par les moteurs de recherche.
+- **V3** (27/11/2026) : dossier `v3/` — https://whiteshade15.github.io/print54/v3/ (V1 + icônes de services)
+
+Les versions sont des copies de test, non indexées par les moteurs de recherche.
 
